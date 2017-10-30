@@ -15,6 +15,7 @@ public class ProjectKorraSpirits extends JavaPlugin {
 
 	public static ProjectKorraSpirits plugin;
 
+	private CommandManager commandManager;
 	private ConfigManager configManager;
 	private PlayerDataManager playerDataManager;
 	private SpiritEntityManager spiritEntityManager;
@@ -23,6 +24,9 @@ public class ProjectKorraSpirits extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		plugin = this;
+		this.configManager = new ConfigManager();
+		this.commandManager = new CommandManager();
+		this.commandManager.initializeCommands();
 		this.playerDataManager = new PlayerDataManager();
 		this.spiritEntityManager = new SpiritEntityManager();
 		this.spiritEntityManager.init();
@@ -48,6 +52,10 @@ public class ProjectKorraSpirits extends JavaPlugin {
 				playerData.cache();
 			}
 		}
+	}
+
+	public CommandManager getCommandManager() {
+		return commandManager;
 	}
 
 	public ConfigManager getConfigManager() {
