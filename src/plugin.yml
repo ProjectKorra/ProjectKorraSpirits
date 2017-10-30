@@ -1,0 +1,6 @@
+name: ProjectKorraSpirits
+version: 1.0.0 PREALPHA
+main: com.projectkorra.spirits.ProjectKorraSpirits
+author: ProjectKorra
+depend: [ProjectKorra]
+description: Spirits for ProjectKorra
