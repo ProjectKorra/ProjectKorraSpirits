@@ -1,0 +1,6 @@
+name: ProjectKorraSpirits
+version: 1.0.0-PRE-ALPHA
+main: com.projectkorra.spirits.ProjectKorraSpirits
+author: ProjectKorra
+depend: [ProjectKorra]
+description: A plugin that brings Spirits to the Avatar - The Last Airbender plugin, ProjectKorra.
